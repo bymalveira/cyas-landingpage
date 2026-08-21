@@ -82,7 +82,7 @@ export function About() {
             Sistemas integrados, administrativos e financeiros
           </span>
 
-          <h2 className="mt-6 text-3xl leading-tight font-extrabold tracking-tight uppercase sm:text-4xl md:text-5xl lg:text-6xl">
+          <h2 className="mt-6 text-3xl leading-tight font-extrabold tracking-tight text-black uppercase sm:text-4xl md:text-5xl lg:text-6xl">
             Tudo que você precisa
             <br className="hidden sm:block" />
             <span className="text-yellow-500"> em um só lugar</span>
