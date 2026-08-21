@@ -1,6 +1,5 @@
 import { Geist_Mono, Inter, Manrope } from "next/font/google"
 import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils"
 
 const manropeHeading = Manrope({
@@ -32,9 +31,7 @@ export default function RootLayout({
         manropeHeading.variable
       )}
     >
-      <body>
-        <ThemeProvider>{children}</ThemeProvider>
-      </body>
+      <body>{children}</body>
     </html>
   )
 }
