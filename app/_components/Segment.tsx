@@ -68,7 +68,7 @@ function IllustrativeCard({ icon: Icon, title, src }: CardProps) {
 export function Segment() {
   return (
     <section
-      className="relative grid w-full grid-cols-1 md:grid-cols-2"
+      className="relative grid w-full max-w-full grid-cols-1 overflow-x-hidden md:grid-cols-2"
       /* {/* removi h-350/md:h-250 e overflow-hidden daqui: altura fixa com
          overflow escondido corta conteúdo silenciosamente quando o conteúdo
          (6 cards + textos) precisa de mais espaço do que o valor fixo previa.

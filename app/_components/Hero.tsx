@@ -4,7 +4,7 @@ import HeroImage from "@/public/images/background-hero.jpg"
 
 export function Hero() {
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative h-screen w-full max-w-full overflow-hidden">
       {/* camada de fundo: imagem + overlay escuro, ocupa a section inteira */}
       <div className="absolute inset-0 z-0 select-none">
         <div className="absolute inset-0 z-10 bg-black/60"></div>{" "}

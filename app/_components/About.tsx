@@ -62,7 +62,7 @@ function AboutCard({ icon: Icon, title, description }: CardProps) {
 
 export function About() {
   return (
-    <section className="relative w-full overflow-hidden px-4 py-20 sm:px-6 lg:px-8">
+    <section className="relative w-full max-w-full overflow-hidden px-4 py-20 sm:px-6 lg:px-8">
       {/* Background */}
       <div className="absolute inset-0 -z-10">
         <Image
@@ -101,7 +101,11 @@ export function About() {
         </header>
 
         {/* Cards */}
-        <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:mt-20 lg:grid-cols-4 lg:gap-6">
+        <div
+          className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:mt-20 lg:grid-cols-4 lg:gap-6"
+          data-aos="fade-up"
+          data-aos-delay="600"
+        >
           {cards.map((card) => (
             <AboutCard key={card.title} {...card} />
           ))}

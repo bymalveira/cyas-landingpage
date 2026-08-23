@@ -5,7 +5,7 @@ import { TechMarquee } from "./TechMarquee"
 export function Services() {
   return (
     <>
-      <section className="relative w-full overflow-hidden px-4 py-20 sm:px-6 lg:px-8">
+      <section className="relative w-full max-w-full overflow-hidden px-4 py-20 sm:px-6 lg:px-8">
         <div className="absolute inset-0 -z-10">
           <Image
             src={ServicesImage}
@@ -13,7 +13,7 @@ export function Services() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-black/70"></div>
+          <div className="absolute inset-0 bg-linear-to-t from-black via-black/90 to-black/70" />
         </div>
         <div className="container mx-auto max-w-7xl text-center">
           <header>
@@ -21,12 +21,11 @@ export function Services() {
               O que usamos na <span className="text-yellow-500">cyas?</span>
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed font-bold text-white sm:text-base">
-              Usamos tecnoloias modernas para construir o seu sistema.
+              Usamos tecnologias modernas para construir o seu sistema.
             </p>
           </header>
         </div>
       </section>
-
       <TechMarquee />
     </>
   )

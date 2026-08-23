@@ -6,7 +6,7 @@ import { Differentiators } from "./_components/Differentiators"
 
 export default function Page() {
   return (
-    <main>
+    <main className="relative w-full max-w-full overflow-x-hidden">
       <Hero />
       <About />
       <Segment />

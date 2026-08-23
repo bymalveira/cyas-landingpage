@@ -120,22 +120,20 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html,
+  body {
+    @apply scroll-smooth font-sans overflow-x-hidden max-w-full;
+  }
   body {
     @apply bg-background text-foreground;
-  }
-  button:not(:disabled),
-  [role="button"]:not(:disabled) {
-    cursor: pointer;
-  }
-  html {
-    @apply scroll-smooth font-sans;
   }
 
   h1,
   h2,
   h3,
   p,
-  span {
+  span,
+  button {
     @apply selection:bg-amber-300;
   }
 }
