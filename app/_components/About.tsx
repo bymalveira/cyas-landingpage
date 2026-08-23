@@ -78,11 +78,17 @@ export function About() {
       <div className="container mx-auto max-w-7xl">
         {/* Header */}
         <header className="mx-auto max-w-4xl text-center">
-          <span className="font-heading text-base font-bold tracking-wide text-yellow-500 sm:text-lg">
+          <span
+            className="font-heading text-base font-bold tracking-wide text-yellow-500 sm:text-lg"
+            data-aos="zoom-in-down"
+          >
             Sistemas integrados, administrativos e financeiros
           </span>
 
-          <h2 className="mt-6 text-3xl leading-tight font-extrabold tracking-tight text-black uppercase sm:text-4xl md:text-5xl lg:text-6xl">
+          <h2
+            className="mt-6 text-3xl leading-tight font-extrabold tracking-tight text-black uppercase sm:text-4xl md:text-5xl lg:text-6xl"
+            data-aos="fade-left"
+          >
             Tudo que você precisa
             <br className="hidden sm:block" />
             <span className="text-yellow-500"> em um só lugar</span>

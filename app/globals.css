@@ -130,4 +130,31 @@
   html {
     @apply scroll-smooth font-sans;
   }
+
+  h1,
+  h2,
+  h3,
+  p,
+  span {
+    @apply selection:bg-amber-300;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
 }

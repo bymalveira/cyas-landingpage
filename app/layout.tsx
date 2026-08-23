@@ -1,5 +1,7 @@
 import { Geist_Mono, Inter, Manrope } from "next/font/google"
 import "./globals.css"
+import { AosInit } from "./_components/aos-init"
+import { Navbar } from "./_components/Navbar"
 import { cn } from "@/lib/utils"
 
 const manropeHeading = Manrope({
@@ -31,7 +33,11 @@ export default function RootLayout({
         manropeHeading.variable
       )}
     >
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+        <AosInit />
+      </body>
     </html>
   )
 }

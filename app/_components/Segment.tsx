@@ -80,7 +80,10 @@ export function Segment() {
       <div className="container mx-auto px-6 py-16 sm:px-10 lg:px-16 lg:py-24">
         {/* {/* padding responsivo: pequeno no mobile (px-6/py-16), cresce
            progressivamente até desktop (lg:px-16/lg:py-24) */}
-        <h2 className="text-3xl leading-tight font-extrabold tracking-tight uppercase sm:text-4xl lg:text-5xl">
+        <h2
+          className="text-3xl leading-tight font-extrabold tracking-tight uppercase sm:text-4xl lg:text-5xl"
+          data-aos="fade-right"
+        >
           {/* {/* título com 3 tamanhos: legível no mobile sem estourar
              a largura, e ganha destaque em telas maiores */}
           Qual o segmento da <br className="hidden sm:block" /> sua empresa?
@@ -89,7 +92,10 @@ export function Segment() {
              estranha num espaço estreito */}
         </h2>
 
-        <div className="mt-10 grid grid-cols-2 gap-4 sm:mt-14 sm:gap-6 md:grid-cols-3 lg:gap-8">
+        <div
+          className="mt-10 grid grid-cols-2 gap-4 sm:mt-14 sm:gap-6 md:grid-cols-3 lg:gap-8"
+          data-aos="fade-up"
+        >
           {/* {/* gap e margem-topo também responsivos: menores no mobile
              pra caber mais conteúdo na tela sem parecer espremido depois */}
           {cards.map((card) => (
@@ -110,16 +116,27 @@ export function Segment() {
           <div className="absolute inset-0 bg-black/60" />
         </div>
 
-        <h2 className="text-2xl leading-tight font-extrabold tracking-tight text-white uppercase sm:text-3xl lg:text-5xl">
+        <h2
+          className="text-2xl leading-tight font-extrabold tracking-tight text-white uppercase sm:text-3xl lg:text-5xl"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
           Varejo em geral
         </h2>
 
-        <p className="mt-6 text-sm font-extralight text-white sm:mt-8">
+        <p
+          className="mt-6 text-sm font-extralight text-white sm:mt-8"
+          data-aos="fade-left"
+        >
           Tem um mercadinho, super mercado, loja de roupas ou de artigos
           diversos? estamos aqui pra você!
         </p>
 
-        <div className="mt-10 sm:mt-14">
+        <div
+          className="mt-10 sm:mt-14"
+          data-aos="fade-right"
+          data-aos-delay="300"
+        >
           <MapPin size={30} className="ml-2 text-white sm:size-8" />
           <p className="text-md mt-2 font-medium text-white">
             Mais velocidade e controle no atendimento dos seus clientes, chega
@@ -131,7 +148,11 @@ export function Segment() {
           <Separator />
         </div>
 
-        <div className="mt-10 mb-10 sm:mt-14 sm:mb-14">
+        <div
+          className="mt-10 mb-10 sm:mt-14 sm:mb-14"
+          data-aos="fade-right"
+          data-aos-delay="500"
+        >
           <Sparkles size={30} className="ml-2 text-white sm:size-8" />
           <p className="text-md mt-2 font-medium text-white">
             Automação de tarefas, chega de perder tempo com aquela coisa
@@ -139,7 +160,11 @@ export function Segment() {
           </p>
         </div>
 
-        <button className="flex w-fit items-center gap-2 rounded-full border border-white px-6 py-3 font-medium text-white transition duration-200 hover:bg-white hover:text-black">
+        <button
+          className="flex w-fit items-center gap-2 rounded-full border border-white px-6 py-3 font-medium text-white transition duration-200 hover:bg-white hover:text-black"
+          data-aos="fade-up"
+          data-aos-delay="700"
+        >
           Contratar sistema
         </button>
       </div>
