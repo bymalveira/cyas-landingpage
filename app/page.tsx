@@ -2,7 +2,8 @@ import { Hero } from "./_components/Hero"
 import { About } from "./_components/About"
 import { Segment } from "./_components/Segment"
 import { Services } from "./_components/Services"
-import { Differentiators } from "./_components/Differentiators"
+import { Footer } from "./_components/Footer"
+import { FrequentlyAskedQuestions } from "./_components/FrequentlyAskedQuestions"
 
 export default function Page() {
   return (
@@ -11,7 +12,8 @@ export default function Page() {
       <About />
       <Segment />
       <Services />
-      <Differentiators />
+      <FrequentlyAskedQuestions />
+      <Footer />
     </main>
   )
 }
