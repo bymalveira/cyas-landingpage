@@ -65,19 +65,18 @@ const cards: CardsProps[] = [
 
 function ServicesCards({ src, title, description }: CardsProps) {
   return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-white/5 bg-[#262626] shadow-lg transition-all duration-300 select-none hover:-translate-y-2 hover:border-yellow-500/30 hover:shadow-yellow-500/10">
+    <article className="flex h-full flex-col overflow-hidden rounded-3xl border border-white/5 bg-[#262626] shadow-lg select-none">
       <div className="relative aspect-video w-full overflow-hidden bg-black">
         <Image
           src={src}
           alt={title}
           fill
-          className="object-cover transition-transform duration-700 group-hover:scale-110 group-hover:rotate-1"
+          className="object-cover"
         />
-        <div className="absolute inset-0 bg-linear-to-t from-[#262626] to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
       </div>
 
       <div className="flex flex-col gap-3 p-6 sm:p-8">
-        <h4 className="text-xl font-bold text-white transition-colors group-hover:text-yellow-500">
+        <h4 className="text-xl font-bold text-white">
           {title}
         </h4>
         <p className="text-sm leading-relaxed text-neutral-400">
@@ -154,8 +153,8 @@ export function Services() {
 
             {/* Setas de Navegação - Visíveis a partir de telas médias */}
             <div className="hidden md:block">
-              <CarouselPrevious className="absolute top-1/2 -left-4 -translate-y-1/2 border-white/10 bg-[#262626] text-white hover:bg-yellow-500 hover:text-black sm:-left-6 lg:-left-12 lg:h-14 lg:w-14 [&>svg]:lg:size-7" />
-              <CarouselNext className="absolute top-1/2 -right-4 -translate-y-1/2 border-white/10 bg-[#262626] text-white hover:bg-yellow-500 hover:text-black sm:-right-6 lg:-right-12 lg:h-14 lg:w-14 [&>svg]:lg:size-7" />
+              <CarouselPrevious className="absolute inset-y-0 -left-14 my-auto h-12 w-12 border-white/10 bg-[#262626] text-white [&>svg]:size-6" />
+              <CarouselNext className="absolute inset-y-0 -right-14 my-auto h-12 w-12 border-white/10 bg-[#262626] text-white [&>svg]:size-6" />
             </div>
           </Carousel>
         </div>
