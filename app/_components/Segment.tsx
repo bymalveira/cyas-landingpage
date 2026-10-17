@@ -160,13 +160,16 @@ export function Segment() {
           </p>
         </div>
 
-        <button
+        <a
+          href="https://bit.ly/4BbmaVH"
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex w-fit items-center gap-2 rounded-full border border-white px-6 py-3 font-medium text-white transition duration-200 hover:bg-white hover:text-black"
           data-aos="fade-up"
           data-aos-delay="700"
         >
           Contratar sistema
-        </button>
+        </a>
       </div>
     </section>
   )

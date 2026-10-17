@@ -38,7 +38,10 @@ export function Hero() {
           {/* trecho de destaque em amarelo */}
         </h1>
 
-        <button
+        <a
+          href="https://bit.ly/4BbmaVH"
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex w-fit items-center gap-2 rounded-full border border-white px-6 py-3 text-white transition hover:bg-white hover:text-black"
           data-aos="fade-right"
           data-aos-delay="300"
@@ -46,7 +49,7 @@ export function Hero() {
           {/* w-fit evita que o botão estique a largura toda do flex container */}
           Entrar em contato
           <ArrowRight className="h-4 w-4" /> {/* seta indicando ação */}
-        </button>
+        </a>
       </div>
     </section>
   )

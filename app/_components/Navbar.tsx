@@ -7,7 +7,7 @@ export function Navbar() {
     <header className="absolute z-50 hidden w-full items-center justify-between bg-transparent px-10 py-4 md:flex">
       {/* Logo */}
       <div className="flex h-auto w-25 items-center justify-center">
-        <Image src={LogoImage} alt="CYAS Informatica" />
+        <Image src={LogoImage} alt="CYAS Software" />
       </div>
 
       {/* Links */}

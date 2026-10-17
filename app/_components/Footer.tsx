@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import LogoImage from "@/public/images/cyas-logo.svg"
-import { AtSign, Earth, Mail, Phone } from "lucide-react"
+import { AtSign, Mail, Phone } from "lucide-react"
 import { Separator } from "@/components/ui/separator"
 
 const navLinks = [
@@ -13,8 +13,7 @@ const navLinks = [
 ]
 
 const socialLinks = [
-  { icon: AtSign, href: "#", label: "Instagram" },
-  { icon: Earth, href: "#", label: "LinkedIn" },
+  { icon: AtSign, href: "https://instagram.com/cyas.software", label: "Instagram" },
 ]
 
 export function Footer() {
@@ -26,7 +25,7 @@ export function Footer() {
           {/* Coluna 1: Logo + Descrição */}
           <div className="flex flex-col gap-6">
             <div className="w-28">
-              <Image src={LogoImage} alt="CYAS Informatica" />
+              <Image src={LogoImage} alt="CYAS Software" />
             </div>
             <p className="max-w-xs text-sm leading-relaxed text-neutral-400">
               Criando soluções tecnológicas para transformar a gestão da sua
@@ -73,18 +72,18 @@ export function Footer() {
             </h4>
             <div className="flex flex-col gap-4">
               <a
-                href="mailto:contato@cyas.com.br"
+                href="mailto:malveira.dev@gmail.com"
                 className="flex items-center gap-3 text-sm text-neutral-400 transition-colors duration-200 hover:text-yellow-500"
               >
                 <Mail size={16} className="shrink-0" />
-                contato@cyas.com.br
+                malveira.dev@gmail.com
               </a>
               <a
-                href="tel:+5500000000000"
+                href="tel:+5588981928227"
                 className="flex items-center gap-3 text-sm text-neutral-400 transition-colors duration-200 hover:text-yellow-500"
               >
                 <Phone size={16} className="shrink-0" />
-                (00) 00000-0000
+                (88) 98192-8227
               </a>
             </div>
           </div>
@@ -96,11 +95,8 @@ export function Footer() {
         {/* Rodapé inferior: Copyright */}
         <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
           <p className="text-xs text-neutral-500">
-            © {new Date().getFullYear()} CYAS Informática. Todos os direitos
+            © {new Date().getFullYear()} CYAS Software. Todos os direitos
             reservados.
-          </p>
-          <p className="text-xs text-neutral-600">
-            Feito por Caique, Ryan, Marcus & Savio
           </p>
         </div>
       </div>
